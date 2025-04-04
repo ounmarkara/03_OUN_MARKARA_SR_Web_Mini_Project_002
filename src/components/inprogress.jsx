@@ -1,15 +1,15 @@
-import { ArrowDown } from "lucide-react";
 import React from "react";
 import CardComponent from "./card";
 
-const InProgress = () => {
+const InProgress = ({ tasks }) => {
   return (
     <div>
-      <h2 className="text-[#4379f2] font-medium mb-4 pb-2 border-b border-[#e2e8f0]">
-        In Progress
-      </h2>
-
-      <CardComponent />
+      <h3 className="text-lg font-semibold mb-4">In Progress</h3>
+      {tasks.length > 0 ? (
+        tasks.map((task) => <CardComponent key={task.taskId} task={task} />)
+      ) : (
+        <p>No tasks available.</p>
+      )}
     </div>
   );
 };

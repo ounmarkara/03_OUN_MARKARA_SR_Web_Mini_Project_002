@@ -1,7 +1,7 @@
-export default function layout({ children }) {
+export default function Layout({ children }) {
   return (
-    <html lang="en">
-      <body className="text-charcoal">{children}</body>
+    <html>
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,15 +1,15 @@
-import { ArrowDown } from "lucide-react";
 import React from "react";
 import CardComponent from "./card";
 
-const Finished = () => {
+const Finished = ({ tasks }) => {
   return (
     <div>
-      <h2 className="text-[#009990] font-medium mb-4 pb-2 border-b border-[#e2e8f0]">
-        Finished
-      </h2>
-
-      <CardComponent />
+      <h3 className="text-lg font-semibold mb-4">Finished</h3>
+      {tasks.length > 0 ? (
+        tasks.map((task) => <CardComponent key={task.taskId} task={task} />)
+      ) : (
+        <p>No tasks available.</p>
+      )}
     </div>
   );
 };

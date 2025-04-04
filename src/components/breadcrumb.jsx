@@ -23,7 +23,7 @@ const Breadcrumb = () => {
         <div className="flex items-center">
           <div className="w-8 h-8 rounded-full bg-[#4379f2] mr-2 overflow-hidden">
             <Image
-              src=""
+              src="https://scontent.fpnh19-1.fna.fbcdn.net/v/t39.30808-6/461204377_10115852257979731_20136418769041878_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=YAatJZVag6oQ7kNvgFJK7-h&_nc_oc=AdlYlKaIFToYzOhoNOuY1xwZuZCrKazo7-Ojhf3b7JHQRUZIVf-AKV_QQZd2RZVJD8U&_nc_zt=23&_nc_ht=scontent.fpnh19-1.fna&_nc_gid=b-aO5zAF1bJMkIPpTTSZhg&oh=00_AYHCm1ww1zCeJHGJLB60dRvHuVdldChx84reE3oxuyDV6Q&oe=67F34FAA"
               alt="Profile"
               width={32}
               height={32}
